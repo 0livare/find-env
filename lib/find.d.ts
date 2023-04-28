@@ -1,1 +1,1 @@
-export function findEnv(): string;
+export function findEnv(fileName?: string): string | undefined;
