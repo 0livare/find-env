@@ -15,14 +15,21 @@ yarn add dotenv load-dotenv  # With yarn
 Add this import before any other import in your project:
 
 ```js
-import 'load-dotenv/load';
+import 'load-dotenv/load'
 ```
 
 ## Or load it yourself
 
 ```js
-import { findEnv } from 'load-dotenv';
+import {findEnv} from 'load-dotenv'
 
-const envFile = findEnv();
-require('dotenv').config({ path: envFile });
+const envFile = findEnv()
+require('dotenv').config({path: envFile})
+```
+
+Or with a custom name
+
+```js
+const envFile = findEnv('.env.local')
+require('dotenv').config({path: envFile})
 ```
