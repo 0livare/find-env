@@ -6,7 +6,6 @@ import fs from 'fs/promises';
  */
 async function run() {
   await fs.copyFile('README.md', 'dist/README.md');
-  await fs.copyFile('.npmrc', 'dist/.npmrc');
   await fs.copyFile('lib/find.d.ts', 'dist/find.d.ts');
 
   // Update package and write into dist

@@ -1,14 +1,14 @@
 {
   "name": "load-dotenv",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Find the closest .env file",
   "main": "lib/find.js",
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "rm -rf dist/* && rollup -c",
-    "pub": "node prepublish.mjs && cd dist && pnpm publish"
+    "build": "rm -rf dist && rollup -c",
+    "pub": "pnpm run build && node prepublish.mjs && cd dist && pnpm publish"
   },
   "peerDependencies": {
     "dotenv": "16"

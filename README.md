@@ -21,7 +21,7 @@ import 'load-dotenv/load';
 Add this import before any other import in your project:
 
 ```js
-import findEnv from 'load-dotenv';
+import { findEnv } from 'load-dotenv';
 
 const envFile = findEnv();
 require('dotenv').config({ path: envFile });
