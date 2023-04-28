@@ -1,6 +1,6 @@
 # Load Dot ENV
 
-Find the closest `.env` file in any parent directory.
+Automatically load the closest `.env` file in any parent directory.
 
 ## Install
 
