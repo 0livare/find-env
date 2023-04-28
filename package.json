@@ -1,10 +1,10 @@
 {
   "name": "load-dotenv",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Automatically load the closest .env file",
   "author": "Zach Olivare <https://github.com/0livare>",
   "license": "MIT",
-  "repository": "https://github.com/0livare/find-env",
+  "repository": "https://github.com/0livare/load-dotenv",
   "main": "lib/find.js",
   "files": [
     "dist"
