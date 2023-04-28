@@ -1,19 +1,19 @@
-# Find ENV
+# Load Dot ENV
 
-Find the closest `.env` file in any parent directory into `process.env`.
+Find the closest `.env` file in any parent directory.
 
 ## Install
 
 ```bash
-npm i dotenv find-env    # With npm
-pnpm i dotenv find-env   # With pnpm
-yarn add dotenv find-env # With yarn
+npm i dotenv load-dotenv     # With npm
+pnpm i dotenv load-dotenv    # With pnpm
+yarn add dotenv load-dotenv  # With yarn
 ```
 
 ## Find and load the closest .env file
 
 ```js
-import 'find-env/load';
+import 'load-dotenv/load';
 ```
 
 ## Or load it yourself
@@ -21,7 +21,7 @@ import 'find-env/load';
 Add this import before any other import in your project:
 
 ```js
-import findEnv from 'find-env';
+import findEnv from 'load-dotenv';
 
 const envFile = findEnv();
 require('dotenv').config({ path: envFile });
