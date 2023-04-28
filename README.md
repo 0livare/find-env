@@ -1,6 +1,6 @@
 # Load Dot ENV
 
-Automatically load the closest `.env` file in any parent directory.
+Automatically find the closest `.env` file in any parent directory, and then load those environment variables into [`process.env`](https://nodejs.org/docs/latest/api/process.html#process_process_env).
 
 ## Install
 
