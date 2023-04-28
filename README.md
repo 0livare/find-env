@@ -12,13 +12,13 @@ yarn add dotenv load-dotenv  # With yarn
 
 ## Find and load the closest .env file
 
+Add this import before any other import in your project:
+
 ```js
 import 'load-dotenv/load';
 ```
 
 ## Or load it yourself
-
-Add this import before any other import in your project:
 
 ```js
 import { findEnv } from 'load-dotenv';
