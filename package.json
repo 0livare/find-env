@@ -1,6 +1,6 @@
 {
   "name": "load-dotenv",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Automatically load the closest .env file",
   "author": "Zach Olivare <https://github.com/0livare>",
   "license": "MIT",
@@ -11,7 +11,8 @@
   ],
   "scripts": {
     "build": "rm -rf dist && rollup -c",
-    "pub": "pnpm run build && node prepublish.mjs && cd dist && pnpm publish"
+    "pub": "pnpm run build && node prepublish.mjs && cd dist && pnpm publish",
+    "pubyalc": "pnpm run build && node prepublish.mjs && cd dist && yalc publish"
   },
   "peerDependencies": {
     "dotenv": "16"
@@ -40,6 +41,7 @@
     "configure",
     "parent",
     "directory",
-    "search"
+    "search",
+    "monorepo"
   ]
 }
