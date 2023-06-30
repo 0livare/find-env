@@ -37,6 +37,8 @@ Or in Common JS:
 require('load-dotenv/load')
 ```
 
+> This will by default throw an error if it can't find a `.env` file in any parent directory. To not throw an error, import `load-dotenv/load/optional` instead.
+
 ## Or load it yourself
 
 ```js

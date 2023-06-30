@@ -1,9 +1,13 @@
-import commonjs from '@rollup/plugin-commonjs';
-import { nodeResolve } from '@rollup/plugin-node-resolve';
+import commonjs from '@rollup/plugin-commonjs'
+import {nodeResolve} from '@rollup/plugin-node-resolve'
 
 export default [
   {
-    input: ['lib/find.js', 'lib/load.js'],
+    input: {
+      find: 'lib/find.js',
+      'load/index': 'lib/load/index.js',
+      'load/optional': 'lib/load/optional.js',
+    },
     output: {
       dir: 'dist',
       format: 'cjs',
@@ -11,4 +15,4 @@ export default [
     },
     plugins: [nodeResolve(), commonjs()],
   },
-];
+]
